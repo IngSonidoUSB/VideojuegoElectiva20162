@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/FurBall2D/Furball.unity
+  isLoaded: 1
+  isActive: 1
