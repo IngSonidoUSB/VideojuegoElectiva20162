@@ -1,8 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{D0ECD870-61CE-4E98-DFEC-7B42ED9F1BFB}") = "ProyectoVideojuegos", "Assembly-CSharp-firstpass.csproj", "{478E641F-DCC8-122B-882A-476D905D10AA}"
-EndProject
 Project("{D0ECD870-61CE-4E98-DFEC-7B42ED9F1BFB}") = "ProyectoVideojuegos", "Assembly-CSharp.csproj", "{23C56B43-23B2-AB87-3661-74C8D8FE5AB9}"
 EndProject
 Project("{D0ECD870-61CE-4E98-DFEC-7B42ED9F1BFB}") = "ProyectoVideojuegos", "Assembly-CSharp-Editor.csproj", "{06C4E452-F144-28CB-1A5B-C5FBBF542364}"
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{478E641F-DCC8-122B-882A-476D905D10AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{478E641F-DCC8-122B-882A-476D905D10AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{478E641F-DCC8-122B-882A-476D905D10AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{478E641F-DCC8-122B-882A-476D905D10AA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{23C56B43-23B2-AB87-3661-74C8D8FE5AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{23C56B43-23B2-AB87-3661-74C8D8FE5AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23C56B43-23B2-AB87-3661-74C8D8FE5AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
