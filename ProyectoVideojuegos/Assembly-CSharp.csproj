@@ -53,7 +53,7 @@
      <Compile Include="Assets\FurBall2D_mobile\Scripts\CameraController_m.cs" />
      <Compile Include="Assets\FurBall2D_mobile\Scripts\DestroyCloud_m.cs" />
      <Compile Include="Assets\FurBall2D_mobile\Scripts\PlayerController_m.cs" />
-     <Compile Include="Assets\timer.cs" />
+     <Compile Include="Assets\Scripts\timer.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
