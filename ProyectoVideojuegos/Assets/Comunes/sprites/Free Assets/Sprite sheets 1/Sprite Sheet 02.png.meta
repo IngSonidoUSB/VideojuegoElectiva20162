@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: cfed6b382bbfe5a40bbb4720234bc13b
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Sprite Sheet 02_0
+    21300002: Sprite Sheet 02_1
+    21300004: Sprite Sheet 02_2
+    21300006: Sprite Sheet 02_3
+    21300008: Sprite Sheet 02_4
+    21300010: Sprite Sheet 02_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -44,6 +50,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
@@ -61,6 +68,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: Sprite Sheet 02_1
       rect:
@@ -73,6 +81,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: Sprite Sheet 02_2
       rect:
@@ -85,6 +94,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: Sprite Sheet 02_3
       rect:
@@ -97,6 +107,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: Sprite Sheet 02_4
       rect:
@@ -109,6 +120,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     - serializedVersion: 2
       name: Sprite Sheet 02_5
       rect:
@@ -121,6 +133,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 

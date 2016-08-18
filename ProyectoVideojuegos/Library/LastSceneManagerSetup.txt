@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Comunes/FurBall2D/Furball.unity
+- path: Assets/Alejandro/Escena 2.unity
   isLoaded: 1
   isActive: 1
