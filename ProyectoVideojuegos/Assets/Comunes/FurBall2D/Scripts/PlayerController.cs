@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerControllerAlejandro : MonoBehaviour {
+public class PlayerController : MonoBehaviour {
 	
 	public float maxSpeed = 6f;
 	public float jumpForce = 1000f;
@@ -68,7 +68,7 @@ public class PlayerControllerAlejandro : MonoBehaviour {
 		}
 
 	}
-	//public float Velocidad = 1.0f;
+	public float Velocidad = 1.0f;
 
 	void FixedUpdate()
 	{
@@ -82,9 +82,9 @@ public class PlayerControllerAlejandro : MonoBehaviour {
 
 		anim.SetFloat ("Speed", Mathf.Abs (hor));
 
-		//rb2d.velocity = new Vector2 (Velocidad * maxSpeed, rb2d.velocity.y);
+		rb2d.velocity = new Vector2 (Velocidad * maxSpeed, rb2d.velocity.y);
 
-		rb2d.velocity = new Vector2 (hor * maxSpeed, rb2d.velocity.y);
+		//rb2d.velocity = new Vector2 (hor * maxSpeed, rb2d.velocity.y);
 		  
 		isGrounded = Physics2D.OverlapCircle (groundCheck.position, 0.15F, whatIsGround);
 

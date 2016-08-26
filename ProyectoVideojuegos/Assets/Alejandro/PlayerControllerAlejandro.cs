@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour {
-	
+public class PlayerControllerAlejandro : MonoBehaviour {
+
 	public float maxSpeed = 6f;
 	public float jumpForce = 1000f;
 	public Transform groundCheck;
@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour {
 	public bool lookingRight = true;
 	bool doubleJump = false;
 	public GameObject Boost;
-	
+
 	private Animator cloudanim;
 	public GameObject Cloud;
 
@@ -29,25 +29,25 @@ public class PlayerController : MonoBehaviour {
 		//cloudanim = GetComponent<Animator>();
 
 		Cloud = GameObject.Find("Cloud");
-  		//cloudanim = GameObject.Find("Cloud(Clone)").GetComponent<Animator>();
+		//cloudanim = GameObject.Find("Cloud(Clone)").GetComponent<Animator>();
 	}
 
 
 	void OnCollisionEnter2D(Collision2D collision2D) {
-		
+
 		if (collision2D.relativeVelocity.magnitude > 20){
 			Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
-		//	cloudanim.Play("cloud");	
+			//	cloudanim.Play("cloud");	
 
 		}
 	}
 
 
-	
+
 	// Update is called once per frame
 	void Update () {
 
-	if (Input.GetButtonDown("Jump") && (isGrounded || !doubleJump))
+		if (Input.GetButtonDown("Jump") && (isGrounded || !doubleJump))
 		{
 			rb2d.AddForce(new Vector2(0,jumpForce));
 
@@ -55,12 +55,12 @@ public class PlayerController : MonoBehaviour {
 			{
 				doubleJump = true;
 				Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
-			//	cloudanim.Play("cloud");		
+				//	cloudanim.Play("cloud");		
 			}
 		}
 
 
-	if (Input.GetButtonDown("Vertical") && !isGrounded)
+		if (Input.GetButtonDown("Vertical") && !isGrounded)
 		{
 			rb2d.AddForce(new Vector2(0,-jumpForce));
 			Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 	}
-	//public float Velocidad = 1.0f;
+	public float Velocidad = 1.0f;
 
 	void FixedUpdate()
 	{
@@ -82,22 +82,22 @@ public class PlayerController : MonoBehaviour {
 
 		anim.SetFloat ("Speed", Mathf.Abs (hor));
 
-		//rb2d.velocity = new Vector2 (Velocidad * maxSpeed, rb2d.velocity.y);
+		rb2d.velocity = new Vector2 (Velocidad * maxSpeed, rb2d.velocity.y);
 
-		rb2d.velocity = new Vector2 (hor * maxSpeed, rb2d.velocity.y);
-		  
+		//rb2d.velocity = new Vector2 (hor * maxSpeed, rb2d.velocity.y);
+
 		isGrounded = Physics2D.OverlapCircle (groundCheck.position, 0.15F, whatIsGround);
 
 		anim.SetBool ("IsGrounded", isGrounded);
 
 		if ((hor > 0 && !lookingRight)||(hor < 0 && lookingRight))
 			Flip ();
-		 
+
 		anim.SetFloat ("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
 	}
 
 
-	
+
 	public void Flip()
 	{
 		lookingRight = !lookingRight;
