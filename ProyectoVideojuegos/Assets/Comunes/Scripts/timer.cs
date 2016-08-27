@@ -6,7 +6,7 @@ public class timer : MonoBehaviour {
 	 
 	public Text timertext;
 	private float tiempo;
-	public int tempo = 120;
+	public int tempo = 90;
 	public int compas = 4;
 	// Use this for initialization
 	void Start () {
