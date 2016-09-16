@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{b0539427-000d-40fb-bce9-889a00522261}">
+        <property name="assetPath">
+            <value>scratch3.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>4.8375056689342406</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{cb41b365-1838-45bf-af28-dcbba57e50e9}</destination>
+        </relationship>
+    </object>
+</objects>

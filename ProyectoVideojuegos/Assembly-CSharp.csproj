@@ -65,13 +65,51 @@
      <Compile Include="Assets\Comunes\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
      <Compile Include="Assets\Comunes\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
      <Compile Include="Assets\Comunes\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Daniel\Fmodlist.cs" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{7edec9db-67d0-4b92-80f6-9a717d7a3df2}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{2b91663c-8d4b-4cca-8158-8f4c6e559b91}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\Event\{0d7da2aa-30f8-4885-baf8-c318b91511f5}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\Master.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{b7c86d28-7759-4778-8b93-977b40408a21}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{e6dc2b6e-da83-431a-b035-e1682c031b42}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\EventFolder\{3b685df9-e9ce-4bca-8874-0eaff1825ecc}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{b3eeb50d-22e7-446d-b4b0-dfa806cb1efa}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\Mixer.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{a74543e1-60b6-444f-b4ed-9303f83012d9}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\Workspace.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{ee03fe60-9278-455b-8fc8-d5960dcf4f20}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\EncodingSetting\{a4f6b038-e20d-412d-873f-1db2b40ad007}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\Tags.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{96361917-3830-4207-b435-33e6d6b61383}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{ef054940-0b56-48f6-84d4-0cb03317a411}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{80b11599-8401-4ded-9193-641aec6a6d5f}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{f8776cb6-7e61-4a3d-b6b5-61e0c539deb1}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{b4a5750d-bf4f-4462-9ade-10bd5bfb8d34}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{5683aaf9-1372-46fc-ba5f-b2f8198f0ee8}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{1bcd90e2-8761-4d17-b2dc-eb0656f05e6e}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{0246a555-0fc4-483e-8e4d-5e00aeef0dc7}.xml" />
      <None Include="Assets\Comunes\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Daniel\stage1\Metadata\BankFolder\{b411560c-ce85-4a27-8412-74dc48dec8b8}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{c55ba0aa-6f0e-42d6-a156-d11e53dea52b}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\Return\{29a32cbb-a7dd-49ef-b4e0-768378a23d64}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\Bank\{5b4231b6-dcfd-415b-b6df-a9a964de4383}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{9ba42f28-c900-4d8c-932d-b0f78b3bea15}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\SnapshotGroup\{10ebeab1-f3cd-46dc-997a-07fea874c9e2}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{0a70c1c8-128e-4306-8502-786982aeb9e3}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{cb3a91ff-3813-4f13-b6a8-cd0b9583b64c}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{b0539427-000d-40fb-bce9-889a00522261}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\Asset\{cb41b365-1838-45bf-af28-dcbba57e50e9}.xml" />
+     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{dacd33b1-75c2-4e61-afb9-24427eed33cb}.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/archivos de programas/unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>D:/archivos de programas/unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{478E641F-DCC8-122B-882A-476D905D10AA}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
