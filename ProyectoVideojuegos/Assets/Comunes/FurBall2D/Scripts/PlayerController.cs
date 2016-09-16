@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 	
-	public float maxSpeed = 6f;
+	public float maxSpeed = 1f;
 	public float jumpForce = 1000f;
 	public Transform groundCheck;
 	public LayerMask whatIsGround;
@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour {
 
 		anim.SetFloat ("Speed", Mathf.Abs (hor));
 
-		rb2d.velocity = new Vector2 (Velocidad * maxSpeed, rb2d.velocity.y);
+		rb2d.velocity = new Vector2 (hor* maxSpeed, rb2d.velocity.y);
 		  
 		isGrounded = Physics2D.OverlapCircle (groundCheck.position, 0.15F, whatIsGround);
 
