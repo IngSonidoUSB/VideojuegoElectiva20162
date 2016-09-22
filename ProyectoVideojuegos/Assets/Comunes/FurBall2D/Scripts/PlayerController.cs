@@ -22,6 +22,12 @@ public class PlayerController : MonoBehaviour {
 	public bool isGrounded = false;
 
 
+	[FMODUnity.EventRef]
+	public string PlayerEstado;
+	FMOD.Studio.EventInstance musica;
+
+
+
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D>();
@@ -30,6 +36,9 @@ public class PlayerController : MonoBehaviour {
 
 		Cloud = GameObject.Find("Cloud");
   		//cloudanim = GameObject.Find("Cloud(Clone)").GetComponent<Animator>();
+
+		musica = FMODUnity.RuntimeManager.CreateInstance(PlayerEstado);
+		musica.start();
 	}
 
 
