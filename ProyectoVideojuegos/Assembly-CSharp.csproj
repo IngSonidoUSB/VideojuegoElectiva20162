@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_0;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_0;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -38,10 +38,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+      <HintPath>D:/archivos de programas/unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+      <HintPath>D:/archivos de programas/unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -66,45 +66,53 @@
      <Compile Include="Assets\Comunes\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
      <Compile Include="Assets\Comunes\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
      <Compile Include="Assets\Daniel\Fmodlist.cs" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{7edec9db-67d0-4b92-80f6-9a717d7a3df2}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{2b91663c-8d4b-4cca-8158-8f4c6e559b91}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\Event\{0d7da2aa-30f8-4885-baf8-c318b91511f5}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\Master.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{b7c86d28-7759-4778-8b93-977b40408a21}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{e6dc2b6e-da83-431a-b035-e1682c031b42}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\EventFolder\{3b685df9-e9ce-4bca-8874-0eaff1825ecc}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{b3eeb50d-22e7-446d-b4b0-dfa806cb1efa}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\Mixer.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{a74543e1-60b6-444f-b4ed-9303f83012d9}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\Workspace.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{ee03fe60-9278-455b-8fc8-d5960dcf4f20}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\EncodingSetting\{a4f6b038-e20d-412d-873f-1db2b40ad007}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\Tags.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{96361917-3830-4207-b435-33e6d6b61383}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{ef054940-0b56-48f6-84d4-0cb03317a411}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{80b11599-8401-4ded-9193-641aec6a6d5f}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{f8776cb6-7e61-4a3d-b6b5-61e0c539deb1}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{b4a5750d-bf4f-4462-9ade-10bd5bfb8d34}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{5683aaf9-1372-46fc-ba5f-b2f8198f0ee8}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{1bcd90e2-8761-4d17-b2dc-eb0656f05e6e}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{0246a555-0fc4-483e-8e4d-5e00aeef0dc7}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{6b8037d8-720e-4ec6-a7db-76953d55686e}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\Workspace.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{c708f4ae-ce21-41af-b692-bc6aecad8afe}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{5c5251b7-6037-42a4-94d5-f8c95b76555f}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{406db20b-293d-4a19-ad48-32f8f351fde8}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{ee066e8a-f269-4d7a-8a67-c854d22fa6d6}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{c5ade464-f0c5-4c9e-9145-4eaeabbd624e}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{e9925b63-769e-4dc5-bf29-f152d6294e91}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\Master.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\EncodingSetting\{719d759c-df6f-4292-ae11-0e7a595a23e4}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\Return\{0f78405b-3637-4dd9-b708-cb842c104cc2}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{729c8879-cdf7-435e-b6a7-0d4377d7b906}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\Asset\{cd58d6c0-3fbf-41da-b51f-0c8a6109a7ae}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{c0a78adf-b2d6-4c5c-82c3-8903abeeb588}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\BankFolder\{b9ebda65-48e5-4249-ad2f-af763f6c149f}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\EventFolder\{32886a81-ebb0-4e4c-9e33-21efcc5b85de}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{6a889ccc-a088-4c62-bb34-03c4c82d5232}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{151c48ea-b598-4143-b3d5-f774691b65eb}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{2aa7a7c1-b384-4d73-b938-992b502ec3fe}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{8387fb89-3115-4537-89fd-620ab2593715}.xml" />
      <None Include="Assets\Comunes\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-     <None Include="Assets\Daniel\stage1\Metadata\BankFolder\{b411560c-ce85-4a27-8412-74dc48dec8b8}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{c55ba0aa-6f0e-42d6-a156-d11e53dea52b}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\Return\{29a32cbb-a7dd-49ef-b4e0-768378a23d64}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\Bank\{5b4231b6-dcfd-415b-b6df-a9a964de4383}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{9ba42f28-c900-4d8c-932d-b0f78b3bea15}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\SnapshotGroup\{10ebeab1-f3cd-46dc-997a-07fea874c9e2}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{0a70c1c8-128e-4306-8502-786982aeb9e3}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{cb3a91ff-3813-4f13-b6a8-cd0b9583b64c}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{b0539427-000d-40fb-bce9-889a00522261}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\Asset\{cb41b365-1838-45bf-af28-dcbba57e50e9}.xml" />
-     <None Include="Assets\Daniel\stage1\Metadata\AudioFile\{dacd33b1-75c2-4e61-afb9-24427eed33cb}.xml" />
- <Reference Include="UnityEngine.Networking">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{5d515268-31b7-4a6e-9c2c-c62839a69660}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\SnapshotGroup\{c9b7ee2f-5867-4e04-a169-02fa43a83ed4}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{d74d4ba7-82c1-4db4-937f-b8d1f947708c}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{bc4aca6b-a9d8-43be-b076-9c86f5c5fdfe}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{754cb834-323c-40c4-9f61-6b08820dc8e6}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{93a2e054-a6dc-483e-bc3f-24ef604f0d4c}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\Mixer.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\Bank\{49f5dbf2-ad70-4066-8333-c4fad7a4da1b}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{cfa5771b-c493-4e14-be1c-1f734c044224}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{61a876fa-e712-4097-b343-c64b00adc431}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{061d1caa-0704-4bf0-aa6e-ebe6ef925730}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{e6cc1f64-c623-4dcb-9bff-d3e0e919a0ed}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{efe1559a-b0f4-4cee-a2f4-704b3d3266ba}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{587ad12f-24f5-49f8-a12a-d81971986620}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{58fefb58-bfb6-44cc-84b2-d351ae8e4ab0}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\EncodingSetting\{0a8f9af5-79e1-4ee6-929f-33893448223e}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{bb2b0fca-fc8c-412c-b92b-960fd1cc0302}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{e6df1b09-f8cf-498c-a628-dbe3bbddadce}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\Event\{1a87d1a4-6dcd-4462-b5e1-2fee0b4d223f}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\AudioFile\{b09f4591-4682-4826-9227-60ebd60dee6a}.xml" />
+     <None Include="Assets\Daniel\escenario1\Metadata\Tags.xml" />
  <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/archivos de programas/unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>D:/archivos de programas/unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

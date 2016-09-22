@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{c708f4ae-ce21-41af-b692-bc6aecad8afe}">
+        <property name="assetPath">
+            <value>armo.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>5.333333333333333</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{cd58d6c0-3fbf-41da-b51f-0c8a6109a7ae}</destination>
+        </relationship>
+    </object>
+</objects>

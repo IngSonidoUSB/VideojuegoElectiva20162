@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour {
 
 	private Rigidbody2D rb2d;
 	private Animator anim;
-	private bool isGrounded = false;
+	public bool isGrounded = false;
 
 
 	// Use this for initialization

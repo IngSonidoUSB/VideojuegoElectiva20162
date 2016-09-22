@@ -16,13 +16,13 @@ public class timer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		tiempo += Time.deltaTime;
-		float multiplicador = tempo / 60;
+		/*float multiplicador = tempo / 60;
 		int contador = (int) (tiempo * multiplicador) + 1;
 		timertext.text = contador.ToString ();
 		if (contador == (compas+1)) {
 			
 			tiempo = 0;
-		}
+		}*/
 
 	
 	}
