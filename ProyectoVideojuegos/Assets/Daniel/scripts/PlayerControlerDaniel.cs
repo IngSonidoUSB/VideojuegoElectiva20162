@@ -4,7 +4,8 @@ using System.Collections;
 public class PlayerControlerDaniel : MonoBehaviour {
 
 public float maxSpeed = 1f;
-public float jumpForce = 1000f;
+public float jumpForce1 = 1000f;
+public float jumpForce2 = 500f;
 public Transform groundCheck;
 public LayerMask whatIsGround;
 public float verticalSpeed = 20;
@@ -20,6 +21,9 @@ public GameObject Cloud;
 private Rigidbody2D rb2d;
 private Animator anim;
 public bool isGrounded = false;
+
+	private float positionx;
+	private float positiony;
 
 	[FMODUnity.EventRef]
 	public string MusicaEvento;
@@ -50,6 +54,11 @@ void OnCollisionEnter2D(Collision2D collision2D) {
 	}
 }
 
+	public bool estadosalto = false;
+	public Vector2 velocity;
+	public float posicionYfija = 5;
+	public float tamanonuevo = 0.5F;
+
 
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.tag == "Intro") {
@@ -65,22 +74,82 @@ void OnCollisionEnter2D(Collision2D collision2D) {
 // Update is called once per frame
 void Update () {
 
-	if (Input.GetButtonDown("Jump") && (isGrounded || !doubleJump))
-	{
-		rb2d.AddForce(new Vector2(0,jumpForce));
-
-		if (!doubleJump && !isGrounded)
+	
+		if (Input.GetKeyDown(KeyCode.Z) && (isGrounded || !doubleJump) && (!estadosalto))
 		{
-			doubleJump = true;
-			Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
+			//rb2d.AddForce(new Vector2(0,jumpForce));
+			rb2d.AddForce(new Vector2(0,jumpForce1),ForceMode2D.Force);
+
+			estadosalto = true;
+			//jumpForce1 = 0;
+			/*if (!doubleJump && !isGrounded)
+			{
+				doubleJump = false;
+				Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
 			//	cloudanim.Play("cloud");		
+			}*/
 		}
-	}
+
+		if (Input.GetKeyUp(KeyCode.Z))
+			estadosalto = false;
+		//jumpForce1 = 1000f;
+
+		if (Input.GetKeyDown(KeyCode.X) && (isGrounded || !doubleJump) && (!estadosalto))
+		{
+			//rb2d.AddForce(new Vector2(0,jumpForce));
+			rb2d.AddForce(new Vector2(0,jumpForce2));
+
+			estadosalto = true;
+			//jumpForce2 = 0;
+			/*if (!doubleJump && !isGrounded)
+			{
+				doubleJump = false;
+				Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
+			//	cloudanim.Play("cloud");		
+			}*/
+		}
+
+		if (Input.GetKeyUp(KeyCode.X))
+			estadosalto = false;
+		 //jumpForce2 = 500f;
+
+		positionx = rb2d.position.x;
+		positiony = rb2d.position.y;
+
+		if (Input.GetKeyDown (KeyCode.C)) {
+			transform.position = new Vector3 (transform.position.x, transform.position.y + posicionYfija, 0);
+			rb2d.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+		}
+		//rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
+		//rb2d.position = new Vector2(positionx,positiony+10);
+		if (Input.GetKeyUp (KeyCode.C)) {
+			rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
+		}
+
+		if (Input.GetKeyDown (KeyCode.V)){
+
+			rb2d.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+		}
+		//rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
+		//rb2d.position = new Vector2(positionx,positiony+10);
+		if (Input.GetKeyUp (KeyCode.V)) {
+			rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
+		}
+
+		if (Input.GetKeyDown (KeyCode.B)){
+
+			transform.localScale = new Vector3 (tamanonuevo, tamanonuevo);
+		}
+		//rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
+		//rb2d.position = new Vector2(positionx,positiony+10);
+		if (Input.GetKeyUp (KeyCode.B)) {
+			transform.localScale = new Vector3 (1f, 1f);
+		}
 
 
 	if (Input.GetButtonDown("Vertical") && !isGrounded)
 	{
-		rb2d.AddForce(new Vector2(0,-jumpForce));
+		rb2d.AddForce(new Vector2(0,-jumpForce1));
 		Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
 		//cloudanim.Play("cloud");
 	}
