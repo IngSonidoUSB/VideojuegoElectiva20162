@@ -27,7 +27,7 @@ public bool isGrounded = false;
 
 	[FMODUnity.EventRef]
 	public string MusicaEvento;
-	public float cambio = 1.2f;
+	public float cambio = 0.8f;
 
 	FMOD.Studio.EventInstance musica;
 
@@ -167,7 +167,7 @@ void FixedUpdate()
 
 	anim.SetFloat ("Speed", Mathf.Abs (hor));
 
-		rb2d.velocity = new Vector2 (Velocidad* maxSpeed, rb2d.velocity.y);
+		rb2d.velocity = new Vector2 (hor* maxSpeed, rb2d.velocity.y);
 
 	isGrounded = Physics2D.OverlapCircle (groundCheck.position, 0.15F, whatIsGround);
 
