@@ -1,11 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Daniel/scripts/seguimiento.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Daniel\scripts\PlayerControlerDaniel.cs">
     <Files>
-      <File FileName="Assets/Daniel/scripts/PlayerControlerDaniel.cs" Line="174" Column="33" />
-      <File FileName="Assets/Daniel/scripts/rueda.cs" Line="13" Column="52" />
-      <File FileName="Assets/Comunes/FurBall2D/Scripts/CameraController.cs" Line="25" Column="15" />
-      <File FileName="Assets/Daniel/scripts/seguimiento.cs" Line="13" Column="69" />
+      <File FileName="Assets\Daniel\scripts\PlayerControlerDaniel.cs" Line="45" Column="2" />
+      <File FileName="Assets\Comunes\FurBall2D\Scripts\CameraController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

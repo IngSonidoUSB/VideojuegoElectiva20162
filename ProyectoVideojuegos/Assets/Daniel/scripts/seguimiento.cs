@@ -10,7 +10,7 @@ public class seguimiento : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position =  player.transform.position - Vector3.forward ;
+		transform.position =  player.transform.position ;
 		// transform.position = player.transform.position - Vector3.forward * 10f;
 	}
 }

@@ -31,6 +31,18 @@ public bool isGrounded = false;
 
 
 	public float cambio1=0.8f;
+	public float cambio2=1.3f;
+	public float cambio3=2.3f;
+	public float cambio4=3.3f;
+	public float cambio5=4.3f;
+	public float cambio6=5.3f;
+	public float cambio7=6.3f;
+	public float cambio8=7.3f;
+	public float cambio9=8.3f;
+	public float cambio10=9.3f;
+	public float cambio11=10.3f;
+	public float cambio12=11.3f;
+
 	FMOD.Studio.EventInstance musica;
 
 
@@ -66,10 +78,17 @@ void OnCollisionEnter2D(Collision2D collision2D) {
 		if (other.tag == "Intro") {
 			musica.start ();
 		}
-		if (other.tag == "A1") {
+		if (other.tag == "posintro") {
 			cambio = cambio1;
 			musica.setParameterValue ("control1", cambio);
-			Debug.Log("prueba colision");
+		}
+		if (other.tag == "A1") {
+			cambio = cambio2;
+			musica.setParameterValue ("control1", cambio);
+		}
+		if (other.tag == "A2") {
+			cambio = cambio3;
+			musica.setParameterValue ("control1", cambio);
 		}
 	}
 
