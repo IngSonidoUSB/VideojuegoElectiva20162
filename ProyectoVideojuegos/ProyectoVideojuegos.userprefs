@@ -2,8 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Alejandro/PlayerControllerAlejandro.cs">
     <Files>
-      <File FileName="Assets/Alejandro/PlayerControllerAlejandro.cs" Line="60" Column="3" />
-      <File FileName="Assets/Comunes/Scripts/timer.cs" Line="8" Column="2" />
+      <File FileName="Assets/Alejandro/PlayerControllerAlejandro.cs" Line="129" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
