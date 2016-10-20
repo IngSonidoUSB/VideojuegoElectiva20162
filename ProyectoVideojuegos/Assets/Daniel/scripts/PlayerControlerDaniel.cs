@@ -84,13 +84,31 @@ void OnCollisionEnter2D(Collision2D collision2D) {
 		}
 		if (other.tag == "A1") {
 			cambio = cambio2;
-			musica.setParameterValue ("control1", cambio);
+			musica.setParameterValue ("control1", cambio);	
+
 		}
 		if (other.tag == "A2") {
 			cambio = cambio3;
 			musica.setParameterValue ("control1", cambio);
+
 		}
+		if (other.tag == "A3") {
+			cambio = cambio4;
+			musica.setParameterValue ("control1", cambio);
+
+		}
+
+		if (other.tag == "saltobajo") {
+			rb2d.AddForce(new Vector2(0,jumpForce2));
+		}
+
+		if (other.tag == "saltoalto") {
+			rb2d.AddForce(new Vector2(0,jumpForce1),ForceMode2D.Force);
+		}
+
+
 	}
+
 
 
 	private bool estadodeinicio = false;
