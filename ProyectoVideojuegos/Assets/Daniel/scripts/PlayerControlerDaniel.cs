@@ -45,7 +45,7 @@ public bool isGrounded = false;
 
 	FMOD.Studio.EventInstance musica;
 
-
+	public GameObject check1;									
 
 // Use this for initialization
 void Start () {
@@ -100,10 +100,18 @@ void OnCollisionEnter2D(Collision2D collision2D) {
 
 		if (other.tag == "saltobajo") {
 			rb2d.AddForce(new Vector2(0,jumpForce2));
+			Debug.Log("prueba");
 		}
 
 		if (other.tag == "saltoalto") {
 			rb2d.AddForce(new Vector2(0,jumpForce1),ForceMode2D.Force);
+		}
+
+
+		if (other.tag == "seguimiento") {
+			//Destroy(this);
+			//Debug.Log("prueba");
+			StartCoroutine(restart());
 		}
 
 
@@ -229,6 +237,13 @@ public void Flip()
 	myScale.x *= -1;
 	transform.localScale = myScale;
 }
+
+	IEnumerator restart()
+	{
+		yield return new WaitForSeconds(0.2f);
+		transform.position =  new Vector3(check1.transform.position.x, check1.transform.position.y);
+	}
+
 
 }
 
