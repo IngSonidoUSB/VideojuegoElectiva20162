@@ -28,12 +28,12 @@ public bool isGrounded = false;
 	[FMODUnity.EventRef]
 	public string MusicaEvento;
 	public float cambio;
-
+	public string texto="";
 
 	public float cambio1=0.8f;
 	public float cambio2=1.3f;
 	public float cambio3=2.3f;
-	public float cambio4=3.3f;
+	public float cambio4=3.3f;	
 	public float cambio5=4.3f;
 	public float cambio6=5.3f;
 	public float cambio7=6.3f;
@@ -42,10 +42,12 @@ public bool isGrounded = false;
 	public float cambio10=9.3f;
 	public float cambio11=10.3f;
 	public float cambio12=11.3f;
+	private float score=0.0f;
 
 	FMOD.Studio.EventInstance musica;
 
 	public GameObject check1;									
+	public GameObject check2;
 
 // Use this for initialization
 void Start () {
@@ -70,11 +72,12 @@ void OnCollisionEnter2D(Collision2D collision2D) {
 
 	public bool estadosalto = false;
 	public Vector2 velocity;
-	public float posicionYfija = 5;
+	public float posicionYfija = 0.5f;
 	public float tamanonuevo = 0.5F;
 
 
 	void OnTriggerEnter2D(Collider2D other) {
+		
 		if (other.tag == "Intro") {
 			musica.start ();
 		}
@@ -97,20 +100,80 @@ void OnCollisionEnter2D(Collision2D collision2D) {
 			musica.setParameterValue ("control1", cambio);
 
 		}
+		if (other.tag == "A4") {
+			cambio = cambio5;
+			musica.setParameterValue ("control1", cambio);
+
+		}
+		if (other.tag == "coro") {
+			cambio = cambio6;
+			musica.setParameterValue ("control1", cambio);
+
+		}
+
+		if (other.tag == "B1") {
+			cambio = cambio7;
+			musica.setParameterValue ("control1", cambio);	
+
+		}
+		if (other.tag == "B2") {
+			cambio = cambio8;
+			musica.setParameterValue ("control1", cambio);
+
+		}
+		if (other.tag == "B3") {
+			cambio = cambio9;
+			musica.setParameterValue ("control1", cambio);
+
+		}
+		if (other.tag == "B4") {
+			cambio = cambio10;
+			musica.setParameterValue ("control1", cambio);
+		}
+
 
 		if (other.tag == "saltobajo") {
 			rb2d.AddForce(new Vector2(0,jumpForce2));
-			Debug.Log("prueba");
+			score = score + 100;
+
 		}
 
 		if (other.tag == "saltoalto") {
 			rb2d.AddForce(new Vector2(0,jumpForce1),ForceMode2D.Force);
+			score = score + 100;
 		}
+
+		if (other.tag == "reducir") {
+			transform.localScale = new Vector3 (0.5f, 0.5f);
+			score = score + 100;
+		}
+
+		if (other.tag == "reducir2") {
+			transform.localScale = new Vector3 (1f, 1f);
+		}
+
+		if (other.tag == "mantener") {
+			transform.position = new Vector3 (transform.position.x, transform.position.y + posicionYfija, 0);
+			rb2d.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+			score = score + 100;
+		}
+
+		if (other.tag == "mantener2") {
+			rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
+		}
+
+
 
 
 		if (other.tag == "seguimiento") {
 			//Destroy(this);
 			//Debug.Log("prueba");
+			StartCoroutine(restart());
+		}
+
+		if (other.tag == "sawone") {
+			//Destroy(this);
+			Debug.Log("prueba");
 			StartCoroutine(restart());
 		}
 
@@ -239,6 +302,12 @@ public void Flip()
 }
 
 	IEnumerator restart()
+	{
+		yield return new WaitForSeconds(0.2f);
+		transform.position =  new Vector3(check1.transform.position.x, check1.transform.position.y);
+	}
+
+	IEnumerator point()
 	{
 		yield return new WaitForSeconds(0.2f);
 		transform.position =  new Vector3(check1.transform.position.x, check1.transform.position.y);

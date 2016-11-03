@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.08.00">
     <object class="Event" id="{1a87d1a4-6dcd-4462-b5e1-2fee0b4d223f}">
         <relationship name="selectables">
-            <destination>{0549c1b0-2d07-4560-a4ac-04d7d3a3daad}</destination>
+            <destination>{75a1e913-e96a-484b-aaf4-181f42ad4d94}</destination>
         </relationship>
         <relationship name="uiLastParameterSelection">
             <destination>{ffbb4733-f80f-4a6a-8f74-22799ad05cc1}</destination>
@@ -19,21 +19,23 @@
     <object class="GroupTrack" id="{76b91415-5d0c-4d9e-808e-58b5f3268a26}"/>
     <object class="GroupTrack" id="{cbb552bc-9232-4c2c-899a-1f7b35e6ee28}"/>
     <object class="GroupTrack" id="{28962088-62cb-4f80-bc45-2427476a2bd2}"/>
+    <object class="GroupTrack" id="{72ff9661-d9f1-4f95-a9c9-fd08e394533e}"/>
     <object class="GroupTrack" id="{4210cdd7-0ff9-426b-aeea-2fd25aab00fe}"/>
     <object class="GroupTrack" id="{a3539eb6-e466-438f-9050-aaa661889d41}"/>
     <object class="GroupTrack" id="{7f2f8f07-6e69-4741-84a8-bc741ee14e3f}"/>
     <object class="GroupTrack" id="{ae0388bf-2e43-4454-b6d4-9db91e80c6fc}"/>
+    <object class="GroupTrack" id="{83dc7e53-d5ff-40b2-8f70-0c24000273b1}"/>
     <object class="Timeline" id="{ffbb4733-f80f-4a6a-8f74-22799ad05cc1}">
         <property name="cursorPosition">
-            <value>2.5233950302453763</value>
+            <value>0</value>
         </property>
         <property name="uiLastRulerScaleRatio">
-            <value>0.018418941826608585</value>
+            <value>0.44077471967380222</value>
         </property>
     </object>
     <object class="GameParameter" id="{7746060b-b170-4481-967f-c39f8dd43868}">
         <property name="cursorPosition">
-            <value>0.40000000596046448</value>
+            <value>6.4000000953674316</value>
         </property>
         <property name="uiLastRulerScaleRatio">
             <value>0.012987012987012988</value>
@@ -49,13 +51,12 @@
             <destination>{b07924fc-be46-4de1-93d7-04382d20b0af}</destination>
             <destination>{37fa53d4-62c9-4bbb-8a1d-3a42e11b907d}</destination>
             <destination>{5e1aff09-4ffd-4dd4-b34f-d88f315912b1}</destination>
+            <destination>{0ff08076-00b7-407e-99be-d2899aca229c}</destination>
+            <destination>{f4f07b5a-3522-4d6d-8d08-6dead6ff55a0}</destination>
         </relationship>
     </object>
     <object class="MixerBusEffectChain" id="{d6153079-2b5a-4d28-82c6-bb396d37f337}"/>
     <object class="MixerBusPanner" id="{525613b8-d192-496b-862d-f4984df27554}"/>
-    <object class="TransitionSourceSound" id="{cfb56ecc-55b7-4793-a8ee-586fb6d2222e}"/>
-    <object class="TransitionDestinationSound" id="{86067bc0-fdae-471d-a51c-ffdf29b8ed41}"/>
-    <object class="SingleSound" id="{ef5212a0-7ee8-4593-aae1-f3407b9405b3}"/>
     <object class="SingleSound" id="{1a8fbc1c-ce72-4750-abc5-67345a8f724f}"/>
     <object class="EventMixerGroup" id="{46bd014c-cda3-475f-a8df-cd33fc678517}"/>
     <object class="SingleSound" id="{cda7bf69-a51c-47f4-aa7a-e3b4e9652835}"/>
@@ -77,9 +78,6 @@
     <object class="SingleSound" id="{ebc418d9-2e1b-412e-9222-f2aa372467d3}"/>
     <object class="SingleSound" id="{fce208d3-451e-473f-82ae-52ff333b76d0}"/>
     <object class="SingleSound" id="{2aed3133-1717-4c5c-bd3b-ff04f6ac4459}"/>
-    <object class="TransitionSourceSound" id="{ae6ab013-0a4a-4e38-a5e5-56994ae67ac7}"/>
-    <object class="TransitionDestinationSound" id="{13649a8c-ee15-4f3a-844a-e27eda7c4c29}"/>
-    <object class="SingleSound" id="{e9329cbc-504f-4619-ad0a-4cadd91db384}"/>
     <object class="EventMixerGroup" id="{0a25c453-7781-4233-bf95-1b1a001dde4f}"/>
     <object class="SingleSound" id="{23fd7b1e-9a88-4fc1-a90d-bb832523cc23}"/>
     <object class="SingleSound" id="{17f629c6-910b-414c-b222-a7b32447f5a9}"/>
@@ -97,8 +95,6 @@
     <object class="SingleSound" id="{1fd112d2-8b23-4144-9fd6-796556d04483}"/>
     <object class="SingleSound" id="{bacc2546-f30b-4bc4-a274-c9558503f44d}"/>
     <object class="SingleSound" id="{a236e0d5-d335-4d54-b912-76f4c2514ff9}"/>
-    <object class="TransitionSourceSound" id="{6c712cfb-8262-4fb7-9139-a3e6e199f97e}"/>
-    <object class="TransitionDestinationSound" id="{5aaccda5-ce5a-4b99-a5f6-ee93165b905a}"/>
     <object class="EventMixerGroup" id="{e5577ad1-a953-4485-bc1b-65ba4c872f53}"/>
     <object class="SingleSound" id="{3492426f-b048-4ade-9b4d-fa74ac5acbc3}"/>
     <object class="SingleSound" id="{22cde2d5-28bf-4ae5-b372-c2072b38af21}"/>
@@ -118,13 +114,14 @@
     <object class="SingleSound" id="{bce1afb8-cac5-411b-8dbe-03c2f48688a7}"/>
     <object class="SingleSound" id="{9fc22b89-ac36-4471-baef-5fbe8e774806}"/>
     <object class="SingleSound" id="{be218a92-51d7-4ea4-88b1-82f601f11add}"/>
-    <object class="TransitionSourceSound" id="{f1d34c82-73e1-4f30-9e9a-9a8011a49060}"/>
-    <object class="TransitionDestinationSound" id="{4f625c75-5f0a-4a9a-bba6-bfe4870ab92d}"/>
     <object class="EventMixerGroup" id="{18b6ac54-d2bc-4cbd-a898-06c264a4c6e1}"/>
+    <object class="SingleSound" id="{a6df9905-c2de-42a1-9284-3c887d6733e7}"/>
+    <object class="SingleSound" id="{5af82745-273b-47bb-aa69-cbcdfc043e1c}"/>
+    <object class="SingleSound" id="{f9b4fa4b-f825-428a-accd-08b3ee207c7a}"/>
+    <object class="SingleSound" id="{2ea21e52-ff2d-4fb9-bbc9-d088c044f819}"/>
+    <object class="EventMixerGroup" id="{0ff08076-00b7-407e-99be-d2899aca229c}"/>
     <object class="SingleSound" id="{be50e5be-01c6-44fb-9eef-b05d12ec58e7}"/>
     <object class="SingleSound" id="{8b952fd1-cb23-4e8a-b331-8307d8fce809}"/>
-    <object class="TransitionSourceSound" id="{52efc80b-20ad-4e61-81a7-18b84325347a}"/>
-    <object class="TransitionDestinationSound" id="{5100d306-10be-489f-9d06-dac5c41aa4e7}"/>
     <object class="SingleSound" id="{7519509a-8144-4ee9-ba7b-02d872a75cfd}"/>
     <object class="EventMixerGroup" id="{4611bc0f-cdcb-4bfd-bc2f-c655af2afa7b}"/>
     <object class="SingleSound" id="{96cee290-f432-4183-a2d7-2595a1339528}"/>
@@ -146,96 +143,92 @@
     <object class="SingleSound" id="{4716f813-8939-4ca8-8de3-fbee87040a62}"/>
     <object class="SingleSound" id="{f35fa73a-0904-4d01-918b-805114febb07}"/>
     <object class="SingleSound" id="{ee9aa7bf-22dd-4c18-8008-31741fe958c3}"/>
-    <object class="TransitionSourceSound" id="{c3b4c131-baf9-4a96-869b-824f44500558}"/>
-    <object class="TransitionDestinationSound" id="{6967f644-1445-4a8c-adfa-8ce5f281a023}"/>
     <object class="EventMixerGroup" id="{b07924fc-be46-4de1-93d7-04382d20b0af}"/>
     <object class="SingleSound" id="{0ae4ca24-dc14-4c96-b854-7e9c9ff2d2af}"/>
     <object class="SingleSound" id="{db734ccf-db7a-4616-9836-917761cdd98a}"/>
     <object class="SingleSound" id="{105e99bb-302a-41bb-8d96-42d1b00de988}"/>
     <object class="SingleSound" id="{76fd9488-d225-4d65-811a-3bf670c427e9}"/>
-    <object class="TransitionSourceSound" id="{70609b20-cf03-4e28-ae00-f3bc6a935725}"/>
-    <object class="TransitionDestinationSound" id="{3fda22bf-a041-4e01-b8c2-7a69a42f0fcc}"/>
     <object class="EventMixerGroup" id="{37fa53d4-62c9-4bbb-8a1d-3a42e11b907d}"/>
     <object class="SingleSound" id="{23080e43-8ae7-475b-bbfe-9e07cc545a60}"/>
     <object class="SingleSound" id="{1606d4d0-050e-48e3-be98-10183fdfd8e9}"/>
     <object class="SingleSound" id="{1647720b-f2bb-4e60-9e40-d7aaa18e7508}"/>
     <object class="SingleSound" id="{a654db9c-911f-4a71-9eeb-1545f94bda12}"/>
-    <object class="TransitionSourceSound" id="{aaad821d-6267-405f-9f20-b2c23600c675}"/>
-    <object class="TransitionDestinationSound" id="{ea443296-1e56-4c6b-8bb4-1b7fa7c52aca}"/>
     <object class="EventMixerGroup" id="{5e1aff09-4ffd-4dd4-b34f-d88f315912b1}"/>
-    <object class="TempoMarker" id="{5693d224-7d48-4f30-8db9-c48eb094d5cf}"/>
-    <object class="NamedMarker" id="{50e5430f-540d-4b3a-aef4-dabbcbeab3f6}"/>
-    <object class="NamedMarker" id="{1dbd2745-b4cd-4800-9bf5-b185b4407506}"/>
-    <object class="NamedMarker" id="{ed68dde1-c6c3-46dd-b2e7-eb90d310de4c}"/>
-    <object class="NamedMarker" id="{a2681ea8-cb1b-44df-b3d8-3a294ccc81ce}"/>
-    <object class="NamedMarker" id="{22328b0e-1e41-4c3e-8a04-b6a67a739f1a}"/>
-    <object class="NamedMarker" id="{678c86aa-116b-4705-a632-789276b57dd5}"/>
-    <object class="NamedMarker" id="{3a29e73c-205f-409c-8ffa-49bfb8523eff}"/>
-    <object class="NamedMarker" id="{bb143708-f211-4ce9-ad34-9aa220aa3a79}"/>
-    <object class="NamedMarker" id="{e8c9dfca-aa5e-4de3-aa98-7a1ec45dcc87}"/>
-    <object class="NamedMarker" id="{64cf10ef-813f-4323-b3b3-9b8d89ea2771}"/>
-    <object class="NamedMarker" id="{dcbee652-a8db-40e6-b142-1a02ff71b9ce}"/>
-    <object class="NamedMarker" id="{4da82051-17dc-4324-803f-20e0ad79c859}"/>
-    <object class="NamedMarker" id="{0609d337-d9ac-4bf8-a546-5294149f1379}"/>
-    <object class="NamedMarker" id="{4b0a8aa3-3f32-46cf-9968-2edb07ca006c}"/>
-    <object class="NamedMarker" id="{6d552ed9-08e4-4b5b-91c6-da8eeab3ed0b}"/>
-    <object class="NamedMarker" id="{039b0556-3923-4f99-b24e-1faf1d75aaf7}"/>
-    <object class="NamedMarker" id="{4fcb2b31-1dd5-4e5c-a358-3baff069c934}"/>
-    <object class="NamedMarker" id="{db3bbe28-960b-4d9d-a935-83f50e57b499}"/>
-    <object class="NamedMarker" id="{8585b897-7d01-49be-822e-00b9082f3c40}"/>
-    <object class="NamedMarker" id="{48fddd78-6f77-4a57-83fd-a308f1730f42}"/>
-    <object class="NamedMarker" id="{76774b0d-f24b-490f-8f05-57bd507090c7}"/>
-    <object class="NamedMarker" id="{29f83cff-94df-43cf-b543-f74b8ed35207}"/>
-    <object class="NamedMarker" id="{fb0db732-d125-4084-a8b3-b9928ed1d986}"/>
-    <object class="NamedMarker" id="{093e08f0-aae5-4323-bc22-cb5eacff9f45}"/>
-    <object class="TransitionRegion" id="{6593fe6f-dcab-4d2b-9c87-767f32e58a48}"/>
-    <object class="TransitionRegion" id="{4d3ceb79-739e-4976-8f3c-5f564e1cd632}"/>
-    <object class="TransitionRegion" id="{e5f8fb3e-ffc0-481a-bcb9-5080068261d0}"/>
-    <object class="TransitionRegion" id="{cb9e7452-f9ff-45b8-8662-c0fd0494da0e}"/>
-    <object class="TransitionRegion" id="{beac1105-c545-4acc-bc79-976f11c5a5f2}"/>
-    <object class="TransitionRegion" id="{5b889b4d-0cad-4cea-bf87-ae4de9a11c54}"/>
-    <object class="TransitionRegion" id="{175387c9-dfe6-49df-bb59-696d55cd70f7}"/>
-    <object class="TransitionRegion" id="{094a896f-b5cf-4082-adaf-156826be8297}"/>
-    <object class="TransitionRegion" id="{f17bbd64-3862-4031-83a6-bb29064625ac}"/>
-    <object class="TransitionRegion" id="{0a5d5928-b5f4-4978-af3b-34cfb7a1d613}"/>
-    <object class="TransitionRegion" id="{57368dfa-8aca-4085-8768-5e44297ed2f8}"/>
-    <object class="TransitionRegion" id="{1c70cc07-c240-4514-84c7-942d07d8bf4a}"/>
-    <object class="TransitionRegion" id="{cbaf0e60-568a-4b38-9ed9-2df54c20a40e}"/>
-    <object class="TransitionRegion" id="{fe103c5c-38d5-4ff0-8e48-c8cb75abe390}"/>
-    <object class="TransitionRegion" id="{485e5689-0bcb-46cd-8276-e54f97254ea0}"/>
-    <object class="TransitionRegion" id="{f9e4c6a5-ffca-47e6-98a4-3c5d30964852}"/>
-    <object class="TransitionRegion" id="{c8299720-151b-4499-aa85-5e036a09a58a}"/>
-    <object class="TransitionRegion" id="{2bb4b05a-45a2-4bde-aea9-b5d1f1a8f2c5}"/>
-    <object class="TransitionRegion" id="{c57d9e11-e421-49fa-b487-88de03993262}"/>
-    <object class="TransitionRegion" id="{99ec9f47-2b11-4f2f-9d4d-10f157526774}"/>
-    <object class="TransitionRegion" id="{ddbab5ca-05a2-4dc8-8046-a9fea688a90e}"/>
-    <object class="TransitionRegion" id="{1345d2a8-a9c9-49f1-be3c-bcc295dc5d20}"/>
-    <object class="TransitionRegion" id="{7c061b5e-daa0-44b9-ae61-eed6bcc6a23d}"/>
-    <object class="TransitionRegion" id="{55f1c501-a861-47f4-9db7-0eda4d33d884}"/>
-    <object class="TransitionRegion" id="{6ad30819-7c53-4ae8-ab84-85d06262a067}"/>
-    <object class="TransitionRegion" id="{eb52fd35-55d0-4707-9c5c-9f8cfdf7c32e}"/>
-    <object class="TransitionRegion" id="{64c94d9a-5df5-4004-a393-332c7693bce0}"/>
-    <object class="TransitionRegion" id="{e127dae6-9f32-4d70-977b-0dabdd09dc22}"/>
-    <object class="TransitionRegion" id="{c4568533-66e4-4c18-8699-9ee9e9582119}"/>
-    <object class="TransitionRegion" id="{ed840fd8-4f38-4fc9-8a51-9da9f6f1f4e5}"/>
-    <object class="TransitionRegion" id="{f55a7cd1-b201-47c3-b677-dabfdbfc3adf}"/>
-    <object class="TransitionRegion" id="{86c76920-861e-4e0d-aaf4-a08b41b240a0}"/>
-    <object class="TransitionRegion" id="{037867fc-28ec-4c66-8166-12eff2c71612}"/>
-    <object class="TransitionRegion" id="{829a6cd8-58e5-49c9-922b-c1b54307a5d5}"/>
-    <object class="TransitionRegion" id="{1c35e37a-b0ae-4ec0-9113-0f076460fa13}"/>
-    <object class="TransitionRegion" id="{0e4f16a9-90b6-4b32-bab9-0ee4a1458c3a}"/>
-    <object class="TransitionRegion" id="{98e330fb-91f0-4651-a3c2-9525d6066894}"/>
-    <object class="TransitionRegion" id="{126acffd-e164-4464-b330-dc991ad0336d}"/>
-    <object class="TransitionRegion" id="{ebb9e4c4-c3a8-4e70-ae2a-0427eee75fdb}"/>
-    <object class="TransitionRegion" id="{0b28b143-f4d8-459c-b882-566b3db464eb}"/>
-    <object class="TransitionRegion" id="{007c0b92-6c86-4741-94f3-140ef2c9840e}"/>
-    <object class="TransitionRegion" id="{3c50dd28-cae5-4152-b62e-75c263225b3d}"/>
-    <object class="TransitionRegion" id="{32bf2f66-88cd-4929-ba04-bf198677dcd8}"/>
-    <object class="TransitionRegion" id="{06d57891-dbef-4c79-a66c-8aeff4901d95}"/>
-    <object class="TransitionRegion" id="{110c343a-8cd3-4005-9553-e5eb9dedd06f}"/>
-    <object class="TransitionRegion" id="{8c6ea337-57b2-4523-9e05-4c8ed1e8c85a}"/>
-    <object class="NamedMarker" id="{2d9588b3-73b7-48c7-a6cc-30868e92cea5}"/>
+    <object class="SingleSound" id="{75a1e913-e96a-484b-aaf4-181f42ad4d94}"/>
+    <object class="EventMixerGroup" id="{f4f07b5a-3522-4d6d-8d08-6dead6ff55a0}"/>
     <object class="TransitionRegion" id="{0549c1b0-2d07-4560-a4ac-04d7d3a3daad}"/>
+    <object class="NamedMarker" id="{2d9588b3-73b7-48c7-a6cc-30868e92cea5}"/>
+    <object class="TransitionRegion" id="{8c6ea337-57b2-4523-9e05-4c8ed1e8c85a}"/>
+    <object class="TransitionRegion" id="{110c343a-8cd3-4005-9553-e5eb9dedd06f}"/>
+    <object class="TransitionRegion" id="{06d57891-dbef-4c79-a66c-8aeff4901d95}"/>
+    <object class="TransitionRegion" id="{32bf2f66-88cd-4929-ba04-bf198677dcd8}"/>
+    <object class="TransitionRegion" id="{3c50dd28-cae5-4152-b62e-75c263225b3d}"/>
+    <object class="TransitionRegion" id="{007c0b92-6c86-4741-94f3-140ef2c9840e}"/>
+    <object class="TransitionRegion" id="{0b28b143-f4d8-459c-b882-566b3db464eb}"/>
+    <object class="TransitionRegion" id="{ebb9e4c4-c3a8-4e70-ae2a-0427eee75fdb}"/>
+    <object class="TransitionRegion" id="{126acffd-e164-4464-b330-dc991ad0336d}"/>
+    <object class="TransitionRegion" id="{98e330fb-91f0-4651-a3c2-9525d6066894}"/>
+    <object class="TransitionRegion" id="{0e4f16a9-90b6-4b32-bab9-0ee4a1458c3a}"/>
+    <object class="TransitionRegion" id="{1c35e37a-b0ae-4ec0-9113-0f076460fa13}"/>
+    <object class="TransitionRegion" id="{829a6cd8-58e5-49c9-922b-c1b54307a5d5}"/>
+    <object class="TransitionRegion" id="{037867fc-28ec-4c66-8166-12eff2c71612}"/>
+    <object class="TransitionRegion" id="{86c76920-861e-4e0d-aaf4-a08b41b240a0}"/>
+    <object class="TransitionRegion" id="{f55a7cd1-b201-47c3-b677-dabfdbfc3adf}"/>
+    <object class="TransitionRegion" id="{ed840fd8-4f38-4fc9-8a51-9da9f6f1f4e5}"/>
+    <object class="TransitionRegion" id="{c4568533-66e4-4c18-8699-9ee9e9582119}"/>
+    <object class="TransitionRegion" id="{e127dae6-9f32-4d70-977b-0dabdd09dc22}"/>
+    <object class="TransitionRegion" id="{64c94d9a-5df5-4004-a393-332c7693bce0}"/>
+    <object class="TransitionRegion" id="{eb52fd35-55d0-4707-9c5c-9f8cfdf7c32e}"/>
+    <object class="TransitionRegion" id="{6ad30819-7c53-4ae8-ab84-85d06262a067}"/>
+    <object class="TransitionRegion" id="{55f1c501-a861-47f4-9db7-0eda4d33d884}"/>
+    <object class="TransitionRegion" id="{7c061b5e-daa0-44b9-ae61-eed6bcc6a23d}"/>
+    <object class="TransitionRegion" id="{1345d2a8-a9c9-49f1-be3c-bcc295dc5d20}"/>
+    <object class="TransitionRegion" id="{ddbab5ca-05a2-4dc8-8046-a9fea688a90e}"/>
+    <object class="TransitionRegion" id="{99ec9f47-2b11-4f2f-9d4d-10f157526774}"/>
+    <object class="TransitionRegion" id="{c57d9e11-e421-49fa-b487-88de03993262}"/>
+    <object class="TransitionRegion" id="{2bb4b05a-45a2-4bde-aea9-b5d1f1a8f2c5}"/>
+    <object class="TransitionRegion" id="{c8299720-151b-4499-aa85-5e036a09a58a}"/>
+    <object class="TransitionRegion" id="{f9e4c6a5-ffca-47e6-98a4-3c5d30964852}"/>
+    <object class="TransitionRegion" id="{485e5689-0bcb-46cd-8276-e54f97254ea0}"/>
+    <object class="TransitionRegion" id="{fe103c5c-38d5-4ff0-8e48-c8cb75abe390}"/>
+    <object class="TransitionRegion" id="{cbaf0e60-568a-4b38-9ed9-2df54c20a40e}"/>
+    <object class="TransitionRegion" id="{1c70cc07-c240-4514-84c7-942d07d8bf4a}"/>
+    <object class="TransitionRegion" id="{57368dfa-8aca-4085-8768-5e44297ed2f8}"/>
+    <object class="TransitionRegion" id="{0a5d5928-b5f4-4978-af3b-34cfb7a1d613}"/>
+    <object class="TransitionRegion" id="{f17bbd64-3862-4031-83a6-bb29064625ac}"/>
+    <object class="TransitionRegion" id="{094a896f-b5cf-4082-adaf-156826be8297}"/>
+    <object class="TransitionRegion" id="{175387c9-dfe6-49df-bb59-696d55cd70f7}"/>
+    <object class="TransitionRegion" id="{5b889b4d-0cad-4cea-bf87-ae4de9a11c54}"/>
+    <object class="TransitionRegion" id="{beac1105-c545-4acc-bc79-976f11c5a5f2}"/>
+    <object class="TransitionRegion" id="{cb9e7452-f9ff-45b8-8662-c0fd0494da0e}"/>
+    <object class="TransitionRegion" id="{e5f8fb3e-ffc0-481a-bcb9-5080068261d0}"/>
+    <object class="TransitionRegion" id="{4d3ceb79-739e-4976-8f3c-5f564e1cd632}"/>
+    <object class="TransitionRegion" id="{6593fe6f-dcab-4d2b-9c87-767f32e58a48}"/>
+    <object class="NamedMarker" id="{093e08f0-aae5-4323-bc22-cb5eacff9f45}"/>
+    <object class="NamedMarker" id="{fb0db732-d125-4084-a8b3-b9928ed1d986}"/>
+    <object class="NamedMarker" id="{29f83cff-94df-43cf-b543-f74b8ed35207}"/>
+    <object class="NamedMarker" id="{76774b0d-f24b-490f-8f05-57bd507090c7}"/>
+    <object class="NamedMarker" id="{48fddd78-6f77-4a57-83fd-a308f1730f42}"/>
+    <object class="NamedMarker" id="{8585b897-7d01-49be-822e-00b9082f3c40}"/>
+    <object class="NamedMarker" id="{db3bbe28-960b-4d9d-a935-83f50e57b499}"/>
+    <object class="NamedMarker" id="{4fcb2b31-1dd5-4e5c-a358-3baff069c934}"/>
+    <object class="NamedMarker" id="{039b0556-3923-4f99-b24e-1faf1d75aaf7}"/>
+    <object class="NamedMarker" id="{6d552ed9-08e4-4b5b-91c6-da8eeab3ed0b}"/>
+    <object class="NamedMarker" id="{4b0a8aa3-3f32-46cf-9968-2edb07ca006c}"/>
+    <object class="NamedMarker" id="{0609d337-d9ac-4bf8-a546-5294149f1379}"/>
+    <object class="NamedMarker" id="{4da82051-17dc-4324-803f-20e0ad79c859}"/>
+    <object class="NamedMarker" id="{dcbee652-a8db-40e6-b142-1a02ff71b9ce}"/>
+    <object class="NamedMarker" id="{64cf10ef-813f-4323-b3b3-9b8d89ea2771}"/>
+    <object class="NamedMarker" id="{e8c9dfca-aa5e-4de3-aa98-7a1ec45dcc87}"/>
+    <object class="NamedMarker" id="{bb143708-f211-4ce9-ad34-9aa220aa3a79}"/>
+    <object class="NamedMarker" id="{3a29e73c-205f-409c-8ffa-49bfb8523eff}"/>
+    <object class="NamedMarker" id="{678c86aa-116b-4705-a632-789276b57dd5}"/>
+    <object class="NamedMarker" id="{22328b0e-1e41-4c3e-8a04-b6a67a739f1a}"/>
+    <object class="NamedMarker" id="{a2681ea8-cb1b-44df-b3d8-3a294ccc81ce}"/>
+    <object class="NamedMarker" id="{ed68dde1-c6c3-46dd-b2e7-eb90d310de4c}"/>
+    <object class="NamedMarker" id="{1dbd2745-b4cd-4800-9bf5-b185b4407506}"/>
+    <object class="NamedMarker" id="{50e5430f-540d-4b3a-aef4-dabbcbeab3f6}"/>
+    <object class="TempoMarker" id="{5693d224-7d48-4f30-8db9-c48eb094d5cf}"/>
     <object class="MixerBusEffectChain" id="{6208d471-417d-48eb-96c6-c6dd0838cc94}"/>
     <object class="MixerBusPanner" id="{c83b2360-2b3d-4df8-9ad0-412558afc072}"/>
     <object class="MixerBusFader" id="{652d606a-350f-4fa8-ad0f-f1752372282d}"/>
@@ -247,6 +240,8 @@
     <object class="MixerBusPanner" id="{d71edcd7-c625-46ba-b422-d1b467c4d7eb}"/>
     <object class="MixerBusEffectChain" id="{b42826c9-50a6-430c-b152-e6c5327f69e1}"/>
     <object class="MixerBusPanner" id="{1db83323-9b92-48c0-b5bb-5ba90634d59f}"/>
+    <object class="MixerBusEffectChain" id="{76d0593d-616c-47f1-b266-b3d8164aec17}"/>
+    <object class="MixerBusPanner" id="{5a9ba999-4f29-4606-9c30-d1f5006f83b8}"/>
     <object class="MixerBusEffectChain" id="{ba3cee87-32fc-404e-9ae4-68cd1d4e8414}"/>
     <object class="MixerBusPanner" id="{28d622f0-f687-4d29-8ab2-78fc99fbb834}"/>
     <object class="MixerBusEffectChain" id="{d3ded458-8d58-4228-ac22-d2fa114c6240}"/>
@@ -255,66 +250,65 @@
     <object class="MixerBusPanner" id="{85c4c0d6-8cf4-4521-a9e7-1d08585576ba}"/>
     <object class="MixerBusEffectChain" id="{6c3aa3c6-34ac-4e62-b2aa-364bb0245e7e}"/>
     <object class="MixerBusPanner" id="{16085a19-0f6c-463c-be73-83a50f2d3159}"/>
-    <object class="ParameterCondition" id="{e7cce462-0ca0-4e9d-b2e3-998aba1fb5f0}"/>
-    <object class="ParameterCondition" id="{022a2ee1-cbcc-4889-a7b5-aece00b228e2}"/>
-    <object class="ParameterCondition" id="{888fa475-c9b7-40ce-8ac6-1030ae8b7636}"/>
-    <object class="ParameterCondition" id="{e86a2756-df41-4e4b-86cf-52a3cadf1f9a}"/>
-    <object class="TransitionTimeline" id="{6606b860-1bb7-487b-b9a9-6b4de8452d2b}">
-        <property name="cursorPosition">
-            <value>0.6409959072305611</value>
-        </property>
-    </object>
-    <object class="ParameterCondition" id="{04867a3d-5058-4500-a1c6-82432ce6a5f2}"/>
-    <object class="ParameterCondition" id="{52b0e295-7ada-434e-8663-0df34de69576}"/>
-    <object class="ParameterCondition" id="{91ad5229-f046-49c0-b7c9-90eeedde83ed}"/>
-    <object class="ParameterCondition" id="{e17e6f0f-4357-460b-a595-93aeceaa266f}"/>
-    <object class="ParameterCondition" id="{bcd1413d-48d9-485a-a857-e05542143245}"/>
-    <object class="ParameterCondition" id="{ee6663aa-6443-4573-94b8-f702c81333b9}"/>
-    <object class="ParameterCondition" id="{cdc50819-7198-497f-9076-7f42665526ed}"/>
-    <object class="ParameterCondition" id="{91953907-4c2f-4117-b3ce-f84ef7e785ab}"/>
-    <object class="ParameterCondition" id="{7e0ff08c-715c-4e34-8295-b5e8c61cde9c}"/>
-    <object class="ParameterCondition" id="{d1e3f261-b8db-40a8-9e3a-2b0496f89f71}"/>
-    <object class="ParameterCondition" id="{c01763cf-1ef4-48f5-a523-aceeb6fde61c}"/>
-    <object class="ParameterCondition" id="{6ef9f095-111d-4959-aabf-4fcb4fc7a7b4}"/>
-    <object class="ParameterCondition" id="{c966d7b6-c700-4ac5-b4ba-f48aaa8c387a}"/>
-    <object class="ParameterCondition" id="{fc7df058-2633-4248-856a-c57dd4514fcb}"/>
-    <object class="ParameterCondition" id="{6d398da9-a27d-482c-8eb5-b848c42a6ec4}"/>
-    <object class="ParameterCondition" id="{fa0564ea-3068-458f-b67a-1bb9af528e7a}"/>
-    <object class="ParameterCondition" id="{5567b9ac-39c2-4001-8a5f-be306a254b1a}"/>
-    <object class="ParameterCondition" id="{2eecd9d2-1426-4f91-b9c1-be336c217d91}"/>
-    <object class="ParameterCondition" id="{f82e1541-93b1-4530-a426-27f7dd794841}"/>
-    <object class="ParameterCondition" id="{1d80420f-2284-401c-a9b6-6ed3273e9cda}"/>
-    <object class="ParameterCondition" id="{b29877ee-833c-452d-a5a4-d95deb7d2351}"/>
-    <object class="ParameterCondition" id="{693317c1-3212-4ce7-9fa7-da3844a6e37a}"/>
-    <object class="ParameterCondition" id="{123db955-38ca-40cf-bffd-3ff6954ad80b}"/>
-    <object class="ParameterCondition" id="{deeae948-44ca-40d8-a0c1-63526f91af35}"/>
-    <object class="ParameterCondition" id="{d095c26b-f57c-42ba-bcb2-adafd0548417}"/>
-    <object class="ParameterCondition" id="{b9d6d330-9a43-439e-be62-66442e118433}"/>
-    <object class="ParameterCondition" id="{4ec07d10-eb80-4588-8137-b746e4b6da02}"/>
-    <object class="ParameterCondition" id="{046a612b-7451-4347-ac81-7f56d629be27}"/>
-    <object class="ParameterCondition" id="{a19d3973-fb7b-4b7c-923a-d4067b6099d1}"/>
-    <object class="ParameterCondition" id="{308bddd9-8495-44db-816d-a96625272b99}"/>
-    <object class="ParameterCondition" id="{4d1af1d6-6172-48a5-9055-f56c2a6c0eac}"/>
-    <object class="ParameterCondition" id="{cb4b954a-4983-49cd-a7cf-0a199eb6bf16}"/>
-    <object class="ParameterCondition" id="{29e43385-c702-4ebd-8e78-8279fa319609}"/>
-    <object class="ParameterCondition" id="{9af98a8d-f378-40f8-a476-69f4d3817fcf}"/>
-    <object class="ParameterCondition" id="{e98ab65f-fac5-4a48-963b-7c36caaa3b8c}"/>
-    <object class="ParameterCondition" id="{1e2551de-0159-490a-9bb4-bb527478b94c}"/>
-    <object class="ParameterCondition" id="{f46b3564-71a8-4f59-b0f4-1f64f42e531e}"/>
-    <object class="ParameterCondition" id="{93f78af3-5290-45ff-8fe7-efd291061c8b}"/>
-    <object class="ParameterCondition" id="{4a473ccb-c634-407f-94bf-25479dc1c780}"/>
-    <object class="ParameterCondition" id="{3638ee8f-82ac-4b9d-b6ff-831c90518167}"/>
-    <object class="ParameterCondition" id="{3d175d39-3757-4c22-834c-e3d21e290313}"/>
-    <object class="ParameterCondition" id="{b4d0d13c-c194-4696-a0a0-73efa538f739}"/>
+    <object class="MixerBusEffectChain" id="{b0398060-9604-4c7e-be34-6646aff535ee}"/>
+    <object class="MixerBusPanner" id="{7d88f2a6-b32d-40da-b07d-3ee2b18f3320}"/>
     <object class="ParameterCondition" id="{e0c8d1cf-a04e-4d27-9787-92a08bcb09f0}"/>
+    <object class="ParameterCondition" id="{b4d0d13c-c194-4696-a0a0-73efa538f739}"/>
+    <object class="ParameterCondition" id="{3d175d39-3757-4c22-834c-e3d21e290313}"/>
+    <object class="ParameterCondition" id="{3638ee8f-82ac-4b9d-b6ff-831c90518167}"/>
+    <object class="ParameterCondition" id="{4a473ccb-c634-407f-94bf-25479dc1c780}"/>
+    <object class="ParameterCondition" id="{93f78af3-5290-45ff-8fe7-efd291061c8b}"/>
+    <object class="ParameterCondition" id="{f46b3564-71a8-4f59-b0f4-1f64f42e531e}"/>
+    <object class="ParameterCondition" id="{1e2551de-0159-490a-9bb4-bb527478b94c}"/>
+    <object class="ParameterCondition" id="{e98ab65f-fac5-4a48-963b-7c36caaa3b8c}"/>
+    <object class="ParameterCondition" id="{9af98a8d-f378-40f8-a476-69f4d3817fcf}"/>
+    <object class="ParameterCondition" id="{29e43385-c702-4ebd-8e78-8279fa319609}"/>
+    <object class="ParameterCondition" id="{cb4b954a-4983-49cd-a7cf-0a199eb6bf16}"/>
+    <object class="ParameterCondition" id="{4d1af1d6-6172-48a5-9055-f56c2a6c0eac}"/>
+    <object class="ParameterCondition" id="{308bddd9-8495-44db-816d-a96625272b99}"/>
+    <object class="ParameterCondition" id="{a19d3973-fb7b-4b7c-923a-d4067b6099d1}"/>
+    <object class="ParameterCondition" id="{046a612b-7451-4347-ac81-7f56d629be27}"/>
+    <object class="ParameterCondition" id="{4ec07d10-eb80-4588-8137-b746e4b6da02}"/>
+    <object class="ParameterCondition" id="{b9d6d330-9a43-439e-be62-66442e118433}"/>
+    <object class="ParameterCondition" id="{d095c26b-f57c-42ba-bcb2-adafd0548417}"/>
+    <object class="ParameterCondition" id="{deeae948-44ca-40d8-a0c1-63526f91af35}"/>
+    <object class="ParameterCondition" id="{123db955-38ca-40cf-bffd-3ff6954ad80b}"/>
+    <object class="ParameterCondition" id="{693317c1-3212-4ce7-9fa7-da3844a6e37a}"/>
+    <object class="ParameterCondition" id="{b29877ee-833c-452d-a5a4-d95deb7d2351}"/>
+    <object class="ParameterCondition" id="{1d80420f-2284-401c-a9b6-6ed3273e9cda}"/>
+    <object class="ParameterCondition" id="{f82e1541-93b1-4530-a426-27f7dd794841}"/>
+    <object class="ParameterCondition" id="{2eecd9d2-1426-4f91-b9c1-be336c217d91}"/>
+    <object class="ParameterCondition" id="{5567b9ac-39c2-4001-8a5f-be306a254b1a}"/>
+    <object class="ParameterCondition" id="{fa0564ea-3068-458f-b67a-1bb9af528e7a}"/>
+    <object class="ParameterCondition" id="{6d398da9-a27d-482c-8eb5-b848c42a6ec4}"/>
+    <object class="ParameterCondition" id="{fc7df058-2633-4248-856a-c57dd4514fcb}"/>
+    <object class="ParameterCondition" id="{c966d7b6-c700-4ac5-b4ba-f48aaa8c387a}"/>
+    <object class="ParameterCondition" id="{6ef9f095-111d-4959-aabf-4fcb4fc7a7b4}"/>
+    <object class="ParameterCondition" id="{c01763cf-1ef4-48f5-a523-aceeb6fde61c}"/>
+    <object class="ParameterCondition" id="{d1e3f261-b8db-40a8-9e3a-2b0496f89f71}"/>
+    <object class="ParameterCondition" id="{7e0ff08c-715c-4e34-8295-b5e8c61cde9c}"/>
+    <object class="ParameterCondition" id="{91953907-4c2f-4117-b3ce-f84ef7e785ab}"/>
+    <object class="ParameterCondition" id="{cdc50819-7198-497f-9076-7f42665526ed}"/>
+    <object class="ParameterCondition" id="{ee6663aa-6443-4573-94b8-f702c81333b9}"/>
+    <object class="ParameterCondition" id="{bcd1413d-48d9-485a-a857-e05542143245}"/>
+    <object class="ParameterCondition" id="{e17e6f0f-4357-460b-a595-93aeceaa266f}"/>
+    <object class="ParameterCondition" id="{91ad5229-f046-49c0-b7c9-90eeedde83ed}"/>
+    <object class="ParameterCondition" id="{52b0e295-7ada-434e-8663-0df34de69576}"/>
+    <object class="ParameterCondition" id="{04867a3d-5058-4500-a1c6-82432ce6a5f2}"/>
+    <object class="ParameterCondition" id="{e86a2756-df41-4e4b-86cf-52a3cadf1f9a}"/>
+    <object class="ParameterCondition" id="{888fa475-c9b7-40ce-8ac6-1030ae8b7636}"/>
+    <object class="ParameterCondition" id="{022a2ee1-cbcc-4889-a7b5-aece00b228e2}"/>
+    <object class="ParameterCondition" id="{e7cce462-0ca0-4e9d-b2e3-998aba1fb5f0}"/>
     <object class="MixerBusFader" id="{9b8aa2c0-0089-49e4-b1a1-566f43fb43f9}"/>
     <object class="SpatialiserEffect" id="{ea0993b1-4565-4928-8326-38c9beba4b4e}"/>
     <object class="MixerBusFader" id="{f7c2b472-bfa0-4575-a929-197693de806d}"/>
     <object class="MixerBusFader" id="{2db854d5-a987-47b8-abc6-f95cbf9de63b}"/>
     <object class="MixerBusFader" id="{4887dc18-af15-4c01-8009-eb5cc96b298c}"/>
     <object class="MixerBusFader" id="{f6dcbc99-9b5f-4bd6-8ac2-d8d645820ddd}"/>
+    <object class="MixerBusFader" id="{c6edc354-eee4-4b6b-a96c-cce79d6af512}"/>
     <object class="MixerBusFader" id="{177fc3e3-78e2-4766-9c77-e446069de903}"/>
     <object class="MixerBusFader" id="{7fabc6e9-5959-4761-856d-c858416b4c24}"/>
     <object class="MixerBusFader" id="{5dbfbd8b-30a1-4c05-aab6-dcd9ac68fc77}"/>
     <object class="MixerBusFader" id="{205e2269-8f34-40ac-ae86-bc60cbdcfe83}"/>
+    <object class="MixerBusFader" id="{ef107033-f3e3-474f-9fbc-2d3195d7c374}"/>
 </objects>

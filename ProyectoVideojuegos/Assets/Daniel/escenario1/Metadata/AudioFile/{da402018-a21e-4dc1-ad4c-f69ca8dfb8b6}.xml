@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{da402018-a21e-4dc1-ad4c-f69ca8dfb8b6}">
+        <property name="assetPath">
+            <value>EL SONIDO DE LOS PAJAROS.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>292.85741496598638</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{cd58d6c0-3fbf-41da-b51f-0c8a6109a7ae}</destination>
+        </relationship>
+    </object>
+</objects>
