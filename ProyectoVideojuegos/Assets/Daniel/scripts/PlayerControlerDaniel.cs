@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerControlerDaniel : MonoBehaviour {
@@ -42,7 +43,8 @@ public bool isGrounded = false;
 	public float cambio10=9.3f;
 	public float cambio11=10.3f;
 	public float cambio12=11.3f;
-	private float score=0.0f;
+	public int puntaje=0;
+	public Text score;
 
 	FMOD.Studio.EventInstance musica;
 
@@ -58,6 +60,9 @@ void Start () {
 	//cloudanim = GameObject.Find("Cloud(Clone)").GetComponent<Animator>();
 
 		musica = FMODUnity.RuntimeManager.CreateInstance(MusicaEvento);
+
+
+	MidiBridge.instance.Warmup (); 
 }
 
 
@@ -130,22 +135,27 @@ void OnCollisionEnter2D(Collision2D collision2D) {
 			cambio = cambio10;
 			musica.setParameterValue ("control1", cambio);
 		}
+		if (other.tag == "coro2") {
+			cambio = cambio11;
+			musica.setParameterValue ("control1", cambio);
+		}
 
 
 		if (other.tag == "saltobajo") {
 			rb2d.AddForce(new Vector2(0,jumpForce2));
-			score = score + 100;
+			puntaje += 100;
 
 		}
+
 
 		if (other.tag == "saltoalto") {
 			rb2d.AddForce(new Vector2(0,jumpForce1),ForceMode2D.Force);
-			score = score + 100;
+
 		}
 
 		if (other.tag == "reducir") {
-			transform.localScale = new Vector3 (0.5f, 0.5f);
-			score = score + 100;
+			transform.localScale = new Vector3 (0.3f, 0.3f);
+
 		}
 
 		if (other.tag == "reducir2") {
@@ -155,7 +165,7 @@ void OnCollisionEnter2D(Collision2D collision2D) {
 		if (other.tag == "mantener") {
 			transform.position = new Vector3 (transform.position.x, transform.position.y + posicionYfija, 0);
 			rb2d.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
-			score = score + 100;
+
 		}
 
 		if (other.tag == "mantener2") {
@@ -163,7 +173,39 @@ void OnCollisionEnter2D(Collision2D collision2D) {
 		}
 
 
+		//if (other.tag == "saltobajo" && (Input.GetKeyDown(KeyCode.X) && (isGrounded || !doubleJump) && (!estadosalto))){			
+		//	score = score + 100;
+		//}
 
+		//if (other.tag == "point50" && (Input.GetKeyDown(KeyCode.X) && (isGrounded || !doubleJump) && (!estadosalto))){			
+		//	score = score + 50;
+		//}
+
+
+		//if (other.tag == "saltoalto" && (Input.GetKeyDown(KeyCode.Z) && (isGrounded || !doubleJump) && (!estadosalto))) {
+		//	score = score + 100;
+		//}
+
+
+		//if (other.tag == "point50" && (Input.GetKeyDown(KeyCode.Z) && (isGrounded || !doubleJump) && (!estadosalto))) {
+		//	score = score + 50;
+		//}
+
+
+		//if (other.tag == "mantener" && (Input.GetKeyDown (KeyCode.C))) {
+		//	score = score + 100;
+		//}
+
+		//if (other.tag == "point50" && (Input.GetKeyDown (KeyCode.C))) {
+		//	score = score + 50;
+		//}
+
+		//if (other.tag == "reducir"  && (Input.GetKeyDown (KeyCode.B))) {
+		//	score = score + 100;
+		//}
+		//if (other.tag == "point50"  && (Input.GetKeyDown (KeyCode.B))) {
+		//	score = score + 50;
+		//}
 
 		if (other.tag == "seguimiento") {
 			//Destroy(this);
@@ -176,6 +218,9 @@ void OnCollisionEnter2D(Collision2D collision2D) {
 			Debug.Log("prueba");
 			StartCoroutine(restart());
 		}
+
+
+
 
 
 	}
@@ -265,6 +310,8 @@ void Update () {
 		Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
 		//cloudanim.Play("cloud");
 	}
+
+		score.text = puntaje.ToString();
 
 }
 public float Velocidad = 1.0f;
