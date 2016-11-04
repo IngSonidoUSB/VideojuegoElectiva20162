@@ -45,6 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Alejandro\MidiBridge.cs" />
+     <Compile Include="Assets\Alejandro\MidiInput.cs" />
+     <Compile Include="Assets\Alejandro\MidiOut.cs" />
      <Compile Include="Assets\Alejandro\PlayerControllerAlejandro.cs" />
      <Compile Include="Assets\Comunes\FurBall2D\Scripts\CameraController.cs" />
      <Compile Include="Assets\Comunes\FurBall2D\Scripts\DestroyCloud.cs" />
