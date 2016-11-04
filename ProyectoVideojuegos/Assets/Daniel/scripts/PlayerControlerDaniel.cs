@@ -29,7 +29,7 @@ public bool isGrounded = false;
 	[FMODUnity.EventRef]
 	public string MusicaEvento;
 	public float cambio;
-	public string texto="";
+
 
 	public float cambio1=0.8f;
 	public float cambio2=1.3f;
@@ -45,6 +45,7 @@ public bool isGrounded = false;
 	public float cambio12=11.3f;
 	public int puntaje=0;
 	public Text score;
+	public int swt;
 
 	FMOD.Studio.EventInstance musica;
 
@@ -142,70 +143,45 @@ void OnCollisionEnter2D(Collision2D collision2D) {
 
 
 		if (other.tag == "saltobajo") {
-			rb2d.AddForce(new Vector2(0,jumpForce2));
-			puntaje += 100;
+			//rb2d.AddForce(new Vector2(0,jumpForce2));
+			swt = 1;
 
 		}
 
 
 		if (other.tag == "saltoalto") {
-			rb2d.AddForce(new Vector2(0,jumpForce1),ForceMode2D.Force);
-
+			//rb2d.AddForce(new Vector2(0,jumpForce1),ForceMode2D.Force);
+			swt = 1;
 		}
 
 		if (other.tag == "reducir") {
-			transform.localScale = new Vector3 (0.3f, 0.3f);
-
+			//transform.localScale = new Vector3 (0.3f, 0.3f);
+			swt = 1;
 		}
 
 		if (other.tag == "reducir2") {
-			transform.localScale = new Vector3 (1f, 1f);
+			//transform.localScale = new Vector3 (1f, 1f);
+			swt = 1;
 		}
 
 		if (other.tag == "mantener") {
-			transform.position = new Vector3 (transform.position.x, transform.position.y + posicionYfija, 0);
-			rb2d.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
-
+			//transform.position = new Vector3 (transform.position.x, transform.position.y + posicionYfija, 0);
+			//rb2d.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+			swt = 1;
 		}
 
 		if (other.tag == "mantener2") {
-			rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
+			//rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
+			swt = 1;
 		}
 
-
-		//if (other.tag == "saltobajo" && (Input.GetKeyDown(KeyCode.X) && (isGrounded || !doubleJump) && (!estadosalto))){			
-		//	score = score + 100;
-		//}
-
-		//if (other.tag == "point50" && (Input.GetKeyDown(KeyCode.X) && (isGrounded || !doubleJump) && (!estadosalto))){			
-		//	score = score + 50;
-		//}
-
-
-		//if (other.tag == "saltoalto" && (Input.GetKeyDown(KeyCode.Z) && (isGrounded || !doubleJump) && (!estadosalto))) {
-		//	score = score + 100;
-		//}
-
-
-		//if (other.tag == "point50" && (Input.GetKeyDown(KeyCode.Z) && (isGrounded || !doubleJump) && (!estadosalto))) {
-		//	score = score + 50;
-		//}
-
-
-		//if (other.tag == "mantener" && (Input.GetKeyDown (KeyCode.C))) {
-		//	score = score + 100;
-		//}
-
-		//if (other.tag == "point50" && (Input.GetKeyDown (KeyCode.C))) {
-		//	score = score + 50;
-		//}
-
-		//if (other.tag == "reducir"  && (Input.GetKeyDown (KeyCode.B))) {
-		//	score = score + 100;
-		//}
-		//if (other.tag == "point50"  && (Input.GetKeyDown (KeyCode.B))) {
-		//	score = score + 50;
-		//}
+		if (other.tag == "point50") {
+			//rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
+			swt = 2;
+		}
+		if (other.tag == "seguimiento") {
+			puntaje = 0;
+		}
 
 		if (other.tag == "seguimiento") {
 			//Destroy(this);
@@ -215,15 +191,56 @@ void OnCollisionEnter2D(Collision2D collision2D) {
 
 		if (other.tag == "sawone") {
 			//Destroy(this);
-			Debug.Log("prueba");
+			//Debug.Log("prueba");
 			StartCoroutine(restart());
 		}
 
 
+	}
 
 
+	void OnTriggerExit2D(Collider2D other) {
+
+
+		if (other.tag == "point50") {
+			//rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
+			swt = 0;
+		}
+
+		if (other.tag == "saltobajo") {
+			swt = 0;
+
+		}
+
+
+		if (other.tag == "saltoalto") {
+			//rb2d.AddForce(new Vector2(0,jumpForce1),ForceMode2D.Force);
+			swt = 0;
+		}
+
+		if (other.tag == "reducir") {
+			//transform.localScale = new Vector3 (0.3f, 0.3f);
+			swt = 0;
+		}
+
+		if (other.tag == "reducir2") {
+			//transform.localScale = new Vector3 (1f, 1f);
+			swt = 0;
+		}
+
+		if (other.tag == "mantener") {
+			//transform.position = new Vector3 (transform.position.x, transform.position.y + posicionYfija, 0);
+			//rb2d.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+			swt = 0;
+		}
+
+		if (other.tag == "mantener2") {
+			//rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
+			swt = 0;
+		}
 
 	}
+
 
 
 
@@ -236,7 +253,13 @@ void Update () {
 		{
 			//rb2d.AddForce(new Vector2(0,jumpForce));
 			rb2d.AddForce(new Vector2(0,jumpForce1),ForceMode2D.Force);
+			if (swt == 1) {
+				puntaje += 100;
+			}
 
+			if (swt == 2) {
+				puntaje += 50;
+			}
 			estadosalto = true;
 			//jumpForce1 = 0;
 			/*if (!doubleJump && !isGrounded)
@@ -255,7 +278,13 @@ void Update () {
 		{
 			//rb2d.AddForce(new Vector2(0,jumpForce));
 			rb2d.AddForce(new Vector2(0,jumpForce2));
+			if (swt == 1) {
+				puntaje += 100;
+			}
 
+			if (swt == 2) {
+				puntaje += 50;
+			}
 			estadosalto = true;
 			//jumpForce2 = 0;
 			/*if (!doubleJump && !isGrounded)
@@ -276,30 +305,38 @@ void Update () {
 		if (Input.GetKeyDown (KeyCode.C)) {
 			transform.position = new Vector3 (transform.position.x, transform.position.y + posicionYfija, 0);
 			rb2d.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+			if (swt == 1) {
+				puntaje += 100;
+			}
+			if (swt == 2) {
+				puntaje += 50;
+			}
+		
 		}
 		//rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
 		//rb2d.position = new Vector2(positionx,positiony+10);
 		if (Input.GetKeyUp (KeyCode.C)) {
 			rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+
 		}
+
+
 
 		if (Input.GetKeyDown (KeyCode.V)){
 
-			rb2d.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+			transform.localScale = new Vector3 (tamanonuevo, tamanonuevo);
+
+			if (swt == 1) {
+				puntaje += 100;
+			}
+			if (swt == 2) {
+				puntaje += 50;
+			}
 		}
 		//rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
 		//rb2d.position = new Vector2(positionx,positiony+10);
 		if (Input.GetKeyUp (KeyCode.V)) {
-			rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
-		}
-
-		if (Input.GetKeyDown (KeyCode.B)){
-
-			transform.localScale = new Vector3 (tamanonuevo, tamanonuevo);
-		}
-		//rb2d.MovePosition(rb2d.position + velocity * Time.fixedDeltaTime);
-		//rb2d.position = new Vector2(positionx,positiony+10);
-		if (Input.GetKeyUp (KeyCode.B)) {
 			transform.localScale = new Vector3 (1f, 1f);
 		}
 
@@ -311,10 +348,76 @@ void Update () {
 		//cloudanim.Play("cloud");
 	}
 
+
+		var pingIn1 = MidiInput.GetKey (MidiChannel.Ch1, 60);
+		if (((pingIn1*127) > 20) && (isGrounded || !doubleJump) && (!estadosalto)){
+			rb2d.AddForce(new Vector2(0,jumpForce1),ForceMode2D.Force);
+			estadosalto = true;		
+			if (swt == 1) {
+				puntaje += 100;
+			}
+			if (swt == 2) {
+				puntaje += 50;
+			}	
+		}
+
+		var pingIn2 = MidiInput.GetKey (MidiChannel.Ch1, 61);
+		if (((pingIn2*127) > 20)  && (isGrounded || !doubleJump) && (!estadosalto))
+		{
+			//rb2d.AddForce(new Vector2(0,jumpForce));
+			rb2d.AddForce(new Vector2(0,jumpForce2));
+			if (swt == 1) {
+				puntaje += 100;
+			}
+
+			if (swt == 2) {
+				puntaje += 50;
+			}
+			estadosalto = true;
+			//jumpForce2 = 0;
+			/*if (!doubleJump && !isGrounded)
+			{
+				doubleJump = false;
+				Boost = Instantiate(Resources.Load("Prefabs/Cloud"), transform.position, transform.rotation) as GameObject;
+			//	cloudanim.Play("cloud");		
+			}*/
+		}
+
+		var pingIn3 = MidiInput.GetKey (MidiChannel.Ch1, 62);
+		if  ((pingIn3*127) > 20) {
+			transform.position = new Vector3 (transform.position.x, transform.position.y + posicionYfija, 0);
+			rb2d.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+			if (swt == 1) {
+				puntaje += 100;
+			}
+			if (swt == 2) {
+				puntaje += 50;
+			}
+
+		}
+
+		var pingIn4 = MidiInput.GetKey (MidiChannel.Ch1, 63);
+		if ((pingIn4*127) > 20) {
+
+			transform.localScale = new Vector3 (tamanonuevo, tamanonuevo);
+
+			if (swt == 1) {
+				puntaje += 100;
+			}
+			if (swt == 2) {
+				puntaje += 50;
+			}
+		}
+
+
+		//Debug.Log (pingIn*127);
+
 		score.text = puntaje.ToString();
 
 }
 public float Velocidad = 1.0f;
+
+
 
 void FixedUpdate()
 {
